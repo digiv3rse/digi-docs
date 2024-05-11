@@ -1,0 +1,31 @@
+
+##### JSONExtensionRegistry
+---
+
+This contract is an extension registry for any address or contract owned by another address to reference a theming configuration file on-chain to update their digiv3rse.xyz minting profile.
+
+This contract is statically deployed at: [0x9e27d816ba115bf9d2b5d810ddedb950463a5fe3](https://sepolia.etherscan.io/address/0x9e27d816ba115bf9d2b5d810ddedb950463a5fe3) on sepolia. We will deploy on further chains as needed and we use an open CREATE2 bytecode-based deploy scheme where anyone can deploy this hyperstructure to any chain as desired.
+
+###### Updating your configuration
+---
+
+
+`function setJSONExtension(address target, string memory uri) external;`
+
+Call this function to set the JSON extension for your own address or an owned target address. We lookup ownership first via`AccessControl` then the `owner()` function.
+
+###### Reading your configuration
+---
+
+`function getJSONExtension(address target) external returns (string memory);`
+
+This function gets the latest registered JSON extension file.
+
+###### Checking your admin status
+---
+
+`function getIsAdmin(address target, address expectedAdmin) external view returns (bool);`
+
+For front-ends checking for updates you can use the `getIsAdmin` function to determine if the ad.
+
+Source Code at[](https://github.com/digiv3rse/json-extension-registry)
