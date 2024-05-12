@@ -50,6 +50,11 @@ module.exports = {
       theme: darkCodeTheme,
       additionalLanguages: ['solidity', 'graphql'],
     },
+    algolia: {
+      apiKey: '9cd20ecedd81b6d5e91fd8ab461bdb47',
+      indexName: 'digi',
+      appId: 'MXTIYN84GN',
+    },
     footer: {
       style: 'dark',
     },
@@ -71,8 +76,7 @@ module.exports = {
       },
       {
         name: 'description',
-        content:
-          'DiGi makes it easy for developers to get started building with NFTs. ',
+        content: 'DiGi makes it easy for developers to get started building with NFTs. ',
       },
     ],
   },
@@ -98,8 +102,7 @@ module.exports = {
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css',
-      integrity:
-        'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
+      integrity: 'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
       crossorigin: 'anonymous',
     },
   ],
