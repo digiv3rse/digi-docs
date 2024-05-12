@@ -6,7 +6,7 @@ const katex = require('rehype-katex')
 module.exports = {
   title: 'DiGi Docs',
   url: 'https://docs.digiv3rse.xyz',
-  baseUrl: '/',
+  baseUrl: '/build/index.html/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
@@ -49,11 +49,6 @@ module.exports = {
     prism: {
       theme: darkCodeTheme,
       additionalLanguages: ['solidity', 'graphql'],
-    },
-    algolia: {
-      apiKey: 'ea9711802399936fa4d55c3033c4cfc5',
-      indexName: 'digi',
-      appId: 'BH4D9OD16A',
     },
     footer: {
       style: 'dark',
